@@ -8,14 +8,75 @@
 .display-flex {
   display: flex;
 }
-/*
-Mobile Main Styles 
-*/
 
+/*
+Mobile Main Hamburguer Menu Styles
+*/
+.header-b {
+  background-color: #272a31;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.mobile-menu-links {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+  padding: 8px;
+}
+
+.mobile-menu {
+  background-color: #272a31;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 90%;
+  margin-top: 50px;
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 48px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.mobile-menu-a {
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: block;
+  margin: 20px 20px;
+}
+
+.mobile-menu-a:visited {
+  text-decoration: none;
+  color: #272a31;
+}
+
+.mobile-menu-links li:nth-child(1) {
+  align-self: center;
+}
 
 /*
 Hamburguer Icon Classes
 */
+#nav-bar-btn {
+  border: none;
+  background-color: #f6f6f7;
+  cursor: pointer;
+}
+
 .bar {
   display: block;
   width: 30px;
@@ -32,9 +93,81 @@ Hamburguer Icon Classes
 }
 
 #nav-bar-btn.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 #nav-bar-btn.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
 }
+
+/*
+Mobile Heading Section
+*/
+.first-container {
+  background-image: url('../images/main-mobile-bg.png');
+  background-repeat: none;
+  background-size: 100%;
+}
+
+#heading-section {
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+}
+
+.above-heading-des {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ec5242;
+  order: 0;
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 30px;
+  color: #ec5242;
+  order: 1;
+}
+
+.main-des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: #f6f6f7;
+  border: 4px solid #fff;
+  padding: 10px;
+  margin: 20px 0;
+  order: 2;
+}
+
+.date-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 52px;
+  color: #ec5242;
+  order: 3;
+}
+
+.location-des {
+
+  order: 4;
+}
+
+
+/*
+Program Section Styles
+*/
+#program-section {
+  background-color: #272a31;
+  color: #fff;
+}
+
+
+
+/*
+Repertoire Section
+*/
+
