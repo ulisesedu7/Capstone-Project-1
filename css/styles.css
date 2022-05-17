@@ -243,7 +243,7 @@ Repertoire Section
 
 .repertoire-title {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 26px;
   line-height: 52px;
   padding-top: 25px;
 }
@@ -252,21 +252,40 @@ Repertoire Section
   margin-top: 3rem;
   padding: 0 2rem;
   column-gap: 1rem;
+  /* width: 85%; */
 }
 
 .img-container img {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
 }
 
 .repertoire-content {
   flex-direction: column;
   row-gap: 10px;
   text-align: left;
-  align-self: flex-start;
+}
+
+.composer-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.piece-name {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ec5242;
 }
 
 .repertoire-hr {
   border: 1px solid  #939399;
   width: 25px;
+  background-color: #939399;
+}
+
+.piece-comp-des {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #272a31;
 }
