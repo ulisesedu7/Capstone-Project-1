@@ -13,7 +13,7 @@
 Mobile Main Hamburguer Menu Styles
 */
 .header-b {
-  background-color: #272a31;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,7 +30,6 @@ Mobile Main Hamburguer Menu Styles
 }
 
 .mobile-menu {
-  background-color: #272a31;
   position: fixed;
   top: 0;
   left: -100%;
@@ -105,13 +104,14 @@ Mobile Heading Section
 */
 .first-container {
   background-image: url('../images/main-mobile-bg.png');
-  background-repeat: none;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 #heading-section {
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 10px 50px;
   margin: 5px;
 }
 
@@ -120,6 +120,7 @@ Mobile Heading Section
   font-size: 22px;
   line-height: 28px;
   color: #ec5242;
+  margin-top: 3rem;
   order: 0;
 }
 
@@ -145,14 +146,18 @@ Mobile Heading Section
 
 .date-heading {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 35px;
   line-height: 52px;
-  color: #ec5242;
+  color: #28352f;
   order: 3;
 }
 
 .location-des {
-
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #28352f;
+  margin-bottom: 50px;
   order: 4;
 }
 
@@ -161,11 +166,59 @@ Mobile Heading Section
 Program Section Styles
 */
 #program-section {
+  flex-direction: column;
+  text-align: center;
   background-color: #272a31;
   color: #fff;
+  padding: 10%;
 }
 
+.program-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 52px;
+  margin: 25px;
+}
 
+.program-hr {
+  background-color: #ec5242;;
+  width: 36px;
+  margin: 0 auto;
+}
+
+.program-article {
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: rgba(16, 16, 24, 0.36);  
+  padding: 2rem;
+}
+
+.program-article img {
+  width: 50px;
+  height: 50px;
+  flex-grow: 1;
+}
+
+.program-part-t {
+  color: #ec5242;
+  flex-grow: 1;
+}
+
+.program-t-des {
+  flex-grow: 2;
+}
+
+#main-btn {
+  border: none;
+  align-self: center;
+  width: 50%;
+  height: 50px;
+  margin-top: 3rem;
+  color: #fff;
+  background-color: #ec5242;
+  cursor: pointer;
+}
 
 /*
 Repertoire Section
