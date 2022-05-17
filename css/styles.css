@@ -34,7 +34,7 @@ Mobile Main Hamburguer Menu Styles
   top: 0;
   left: -100%;
   width: 100%;
-  height: 90%;
+  height: 80%;
   margin-top: 50px;
   background-color: #fff;
   transition: 0.3s;
@@ -52,7 +52,7 @@ Mobile Main Hamburguer Menu Styles
   justify-content: flex-start;
   align-items: flex-start;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 28px;
   display: block;
   margin: 20px 20px;
@@ -67,10 +67,14 @@ Mobile Main Hamburguer Menu Styles
   align-self: center;
 }
 
+#about-link:visited {
+  color: #ec5242;
+}
 /*
 Hamburguer Icon Classes
 */
 #nav-bar-btn {
+  display: inline-block;
   border: none;
   background-color: #f6f6f7;
   cursor: pointer;
@@ -107,6 +111,7 @@ Mobile Heading Section
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  padding: 10px;
 }
 
 #heading-section {
@@ -167,6 +172,7 @@ Program Section Styles
 */
 #program-section {
   flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: #272a31;
   color: #fff;
@@ -174,47 +180,55 @@ Program Section Styles
 }
 
 .program-title {
-  font-weight: 500;
-  font-size: 35px;
+  font-weight: 400;
+  font-size: 32px;
   line-height: 52px;
   margin: 25px;
 }
 
 .program-hr {
-  background-color: #ec5242;;
+  border: 1px solid #ec5242;
   width: 36px;
   margin: 0 auto;
 }
 
 .program-article {
-  justify-content: space-around;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
   margin-top: 2rem;
   background-color: rgba(16, 16, 24, 0.36);  
-  padding: 2rem;
+  padding: 20px;
 }
 
 .program-article img {
-  width: 50px;
+  /* width: 20%; */
   height: 50px;
   flex-grow: 1;
 }
 
 .program-part-t {
+  text-align: left;
   color: #ec5242;
+  /* width: 20%; */
   flex-grow: 1;
 }
 
 .program-t-des {
-  flex-grow: 2;
+  text-align: left;
+  /* width: 60%; */
+  flex-grow: 4;
 }
 
 #main-btn {
+  font-weight: 400;
+  font-size: 20px;
   border: none;
   align-self: center;
-  width: 50%;
-  height: 50px;
+  width: fit-content;
   margin-top: 3rem;
+  padding: 1.6rem 3.2rem;
   color: #fff;
   background-color: #ec5242;
   cursor: pointer;

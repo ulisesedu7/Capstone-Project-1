@@ -31,3 +31,7 @@ document.querySelectorAll('.mobile-menu-a').forEach((n) => n.addEventListener('c
   headerB.classList.remove('header-b');
 }));
 
+/*
+Create HTML dynamically
+*/
+
