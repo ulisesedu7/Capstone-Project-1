@@ -376,3 +376,40 @@ About Page Specific Styles
   font-weight: 700;
   color: black;
 }
+
+/*
+Logo Section
+*/
+#logo-des {
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.logo-title {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  padding: 25px 0;
+}
+
+.logo-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 25px 0;
+  color: rgb(80, 80, 80);
+}
+
+#main-logo-img {
+  margin: 15px 0;
+}
+
+#logo-hr {
+  border: 1px solid  #e6e6e6;
+  width: 100%;
+  background-color: #e6e6e6;
+  margin: 25px 0;
+}
