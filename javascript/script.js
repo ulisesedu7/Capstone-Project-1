@@ -2,7 +2,6 @@
 JS Object Data
 */
 import repertoireInfo from './data.js';
-import projectInfo from './data.js';
 
 /*
 Hamburguer Menu constants

@@ -128,7 +128,7 @@ Mobile Heading Section
 
 .above-heading-des {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 28px;
   color: #ec5242;
   margin-top: 3rem;
@@ -348,4 +348,31 @@ footer {
 .footer-rights :nth-child(1) {
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+/*
+About Page Specific Styles
+*/
+.about-head-section {
+  text-align: center;
+}
+
+#about-main-des {
+  border: 1px solid #cccbcb;
+  background-color: #fff;
+  padding: 20px;
+}
+
+#contact-des {
+  font-size: 18px;
+}
+
+#about-email {
+  display: block;
+}
+
+#about-email:link,
+#about-email:visited {
+  font-weight: 700;
+  color: black;
 }
