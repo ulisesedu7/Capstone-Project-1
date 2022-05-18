@@ -15,6 +15,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header id="desktop-header">
+    <nav class="desktop-nav-list display-flex">
+      <a class="mobile-menu-a" id="main-logo" href="index.html">Main Logo</a>
+      <ul class="desktop-menu-links display-flex">
+        <li><a class="desktop-menu-a" href="about-page.html" id="about-link">About</a></li>
+        <li><a class="desktop-menu-a" href="#program-section">Program</a></li>
+        <li><a class="desktop-menu-a" href="#repertoire">Repertoire</a></li>
+        <li><a class="desktop-menu-a" href="#sponsors">Sponsors</a></li>
+        <li><a class="desktop-menu-a" href="#">News</a></li>
+        </ul>
+    </nav>
+  </header>
+  
   <div class="first-container">
     <header id="mobile-header">
       <nav class="nav-list">
@@ -62,17 +75,50 @@
   </section>
 
   <section id="logo-des" class="display-flex">
-    <h2 class="logo-title">Tchaikovsky - Piano Concerto No.1 in B♭ minor, Op.23 Logo</h2>
+    <h2 class="logo-title">See past concerts of the Tchaikovsky orcherstra</h2>
 
     <hr class="program-hr">
 
-    <p class="logo-description">The logo of the Tchaikovsky - Piano Concerto No.1 in B♭ minor, Op.23 has been decided to be the image of the main composer</p>
+    <p class="logo-description">Take a look at some of the past Tchaikovsky concerts that took place in San Pedro Sula and San Salvador</p>
 
-    <img id="main-logo-img" src="images/tchaikovski-img.jpg">
+    <div id="previous-event-1" class="display-flex">
+      <h3 class="year-event">2019</h3>
+      <p class="concert-event">Tchaikovsky - Piano Concerto No.2 in G major, Op. 44</p>
+    </div>
+
+    <div id="previous-event-2" class="display-flex">
+      <h3 class="year-event">2021</h3>
+      <p class="concert-event">Tchaikovsky - Violin Concerto in D major, Op. 35</p>
+    </div>
 
   </section>
 
+  <section id="sponsors" class="display-flex">
+    <h3 class="sponsors-title">Partner</h3>
+
+    <hr class="program-hr">
+
+    <ul class="sponsors-list display-flex">
+      <li>Mozilla</li>
+      <li>Google</li>
+      <li>Naver</li>
+      <li>Daumkakao</li>
+      <li>Airbnb</li>
+    </ul>
+
+  </section>
+
+  <footer class="display-flex">
+    <div class="main-logo-footer">
+      <img src="images/cck-logo1-footer.png">
+    </div>
+    
+    <div class="footer-rights">
+      <p id="about-footer">&copy;2022 Tchaikovsky - Piano Concerto No.1, Some Rights Reresved</p>
+    </div>
+  </footer>
+
   <!--My Javascript -->
-  <script type="text/javascript" src="javascript/script.js"></script>
+  <script type="module" src="javascript/script.js"></script>
 </body>
 </html>

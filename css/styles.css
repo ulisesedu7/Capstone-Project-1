@@ -48,9 +48,6 @@ Mobile Main Hamburguer Menu Styles
 
 .mobile-menu-a {
   text-decoration: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
@@ -316,13 +313,17 @@ Sponsors Section
 }
 
 .sponsors-list {
+  flex-wrap: wrap;
   list-style: none;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
   color: grey;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 30px;
-  width: 100%;
+  width: 90%;
 }
 
 /*
@@ -412,4 +413,165 @@ Logo Section
   width: 100%;
   background-color: #e6e6e6;
   margin: 25px 0;
+}
+
+#previous-event-1 {
+  background-image: url('../images/orchestra-2019.jpg');
+  background-size: cover;
+  height: 150px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.year-event {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.concert-event {
+  color: #fff;
+}
+
+#about-footer {
+  font-weight: 400;
+}
+
+/*
+Hidden Desktop Stuff
+*/
+#desktop-header {
+  display: none;
+}
+
+#program-a {
+  display: none;
+}
+/*
+Desktop Version Styles
+*/
+@media screen and (min-width: 768px) {
+  #mobile-header {
+    display: none;
+  }
+
+  #desktop-header {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+
+  }
+
+  .first-container {
+    padding: 3.125rem 6.25rem;
+  }
+
+  .desktop-nav-list {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 6.25rem;
+    box-shadow: 10px 20px rgba(0, 0, 0);
+  }
+
+  .desktop-menu-links {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style: none;
+    padding: 8px;
+  }
+
+  .desktop-menu-a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: block;
+    margin: 20px 30px;
+  }
+  
+  .desktop-menu-a:link {
+    text-decoration: none;
+    color: #272a31;
+  }
+  
+  .desktop-menu-a:visited {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  #heading-section {
+    width: 80%;
+  }
+
+  .above-heading-des {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .main-heading {
+    font-size: 62px;
+    line-height: 62px;
+  }
+
+  .main-des {
+    font-size: 16px;
+    line-height: 35px;
+    padding: 15px;
+    width: 75%;
+    margin-bottom: 30px;
+  }
+
+  #program-section {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'title title title title title'
+      'hr hr hr hr hr'
+      'art art art art art'
+      'lk lk lk lk lk';
+  }
+
+  .program-title {
+    grid-area: title;
+    margin-bottom: 0;
+  }
+
+  .program-hr {
+    grid-area: hr;
+    margin-bottom: 1rem;
+  }
+
+  .program-article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 0.6rem;
+    margin: 1.1rem 0.1rem;
+    background-color: rgba(73, 73, 85, 0.36);  
+    padding: 20px;
+  }
+
+  #program-a {
+    grid-area: lk;
+  }
+
+  #main-btn {
+    display: none;
+  }
+
+  #program-a {
+    display: block;
+    color: #fff;
+    margin-top: 4rem;
+  }
+
+  footer {
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem 1rem;
+  }
 }
