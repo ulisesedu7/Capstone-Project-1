@@ -332,8 +332,9 @@ Footer
 footer {
   column-gap: 16px;  
   background-color: #e2e2e2;
-  padding: 20px;
+  padding: 40px;
   align-items: center;
+  justify-content: center;
 }
 
 .main-logo-footer img {
@@ -387,6 +388,7 @@ Logo Section
   align-items: center;
   padding-bottom: 2rem;
   text-align: center;
+  margin: 0 5rem;
 }
 
 .logo-title {
@@ -410,7 +412,7 @@ Logo Section
 
 #logo-hr {
   border: 1px solid  #e6e6e6;
-  width: 100%;
+  width: 99%;
   background-color: #e6e6e6;
   margin: 25px 0;
 }
@@ -418,9 +420,23 @@ Logo Section
 #previous-event-1 {
   background-image: url('../images/orchestra-2019.jpg');
   background-size: cover;
-  height: 150px;
+  height: 180px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 0 1000px #e4372480;
+}
+
+#previous-event-2 {
+  background-image: url('../images/orchestra-2021.jpg');
+  background-size: cover;
+  height: 180px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 0 1000px #e4372480;
 }
 
 .year-event {
@@ -445,6 +461,14 @@ Hidden Desktop Stuff
 }
 
 #program-a {
+  display: none;
+}
+
+.about-head-section hr {
+  display: none;
+}
+
+#about-footer-img {
   display: none;
 }
 /*
@@ -500,7 +524,7 @@ Desktop Version Styles
     color: #272a31;
   }
 
-  #heading-section {
+  .desktop-heading {
     width: 80%;
   }
 
@@ -555,6 +579,15 @@ Desktop Version Styles
     padding: 20px;
   }
 
+  .program-article:hover {
+    border: 2px solid #fff;
+  }
+
+  .program-t-des {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
   #program-a {
     grid-area: lk;
   }
@@ -569,9 +602,77 @@ Desktop Version Styles
     margin-top: 4rem;
   }
 
+  #repertoire {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'rep-t rep-t'
+      'rep-hr rep-hr'
+      'cnt cnt';
+    padding: 6.25rem;
+  }
+
+  .repertoire-title {
+    grid-area: rep-t;
+  }
+
+  #repertoire .program-hr {
+    grid-area: rep-hr;
+  }
+
   footer {
     align-items: center;
     justify-content: center;
     padding: 3.5rem 1rem;
+  }
+
+  /*
+  About Page Styles for Desktop
+  */
+  .about-head-section hr {
+    order: 2;
+  }
+
+  #about-main-des {
+    margin: 20px auto 55px;
+  }
+
+  #about-email {
+    display: inline-block;
+  }
+
+  .events-container {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  #about-main-des,
+  .logo-description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #contact-des {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .sponsors-about {
+    display: none;
+  }
+
+  #about-footer {
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+  
+  #about-footer-mobile {
+    display: none;
+  }
+
+  #about-footer-img {
+    display: block;
   }
 }
