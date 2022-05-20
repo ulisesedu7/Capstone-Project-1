@@ -34,7 +34,7 @@ document.querySelectorAll('.mobile-menu-a').forEach((n) => n.addEventListener('c
 /*
 Create HTML dynamically
 */
-function genRepertoireMarkup (featureImg, composerTitle, pieceName, pieceDes) {
+function genRepertoireMarkup(featureImg, composerTitle, pieceName, pieceDes) {
   const projectMarkup = `<div class="repertoire-work-card display-flex">
   <div class="img-container">
     <img src=${featureImg} class="feature-img">
@@ -51,7 +51,9 @@ function genRepertoireMarkup (featureImg, composerTitle, pieceName, pieceDes) {
   return projectMarkup;
 }
 
-const projectsMarkUp = repertoireInfo.reduce((acc, {featureImg, composerTitle, pieceName, pieceDes }) => `${acc}${genRepertoireMarkup(featureImg, composerTitle, pieceName, pieceDes)}`, '');
+const projectsMarkUp = repertoireInfo.reduce((acc, {
+  featureImg, composerTitle, pieceName, pieceDes,
+}) => `${acc}${genRepertoireMarkup(featureImg, composerTitle, pieceName, pieceDes)}`, '');
 
 const repertoireSection = document.getElementById('repertoire');
 
