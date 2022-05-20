@@ -70,8 +70,10 @@ Mobile Main Hamburguer Menu Styles
   align-self: center;
 }
 
-#about-link:link,
-#about-link:visited {
+#about-link-d:link,
+#about-link-d:visited,
+#about-link-m:link,
+#about-link-m:visited {
   color: #ec5242;
 }
 
@@ -397,7 +399,7 @@ About Page Specific Styles
 /*
 Logo Section
 */
-#logo-des {
+.logo-des {
   background-color: #fff;
   flex-direction: column;
   align-items: center;
@@ -424,15 +426,6 @@ Logo Section
 #main-logo-img {
   margin: 15px 0;
 }
-
-/* #main-logo {
-  border: 1px solid #ec5242;
-  background-color: #ec5242;
-  color: #fff;
-  border-radius: 20px;
-  padding: 12px;
-  font-size: 32px;
-} */
 
 #logo-hr {
   border: 1px solid  #e6e6e6;
@@ -695,5 +688,10 @@ Desktop Version Styles
 
   #about-footer-img {
     display: block;
+  }
+
+  #about-footer-p {
+    color: #fff;
+    font-weight: 400;
   }
 }
