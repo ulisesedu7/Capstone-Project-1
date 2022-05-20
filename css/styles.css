@@ -492,12 +492,41 @@ Hidden Desktop Stuff
   display: none;
 }
 
+#pre-header-d {
+  display: none;
+}
+
 /*
 Desktop Version Styles
 */
 @media screen and (min-width: 768px) {
   #mobile-header {
     display: none;
+  }
+
+  #pre-header-d {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    background-color: #2e2e2e;
+    height: 2.4rem;
+    padding: 0 6.25rem;
+  }
+
+  #pre-header-d a {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 10px;
+    align-self: center;
+  }
+
+  #pre-header-d a:link,
+  #pre-header-d a:visited {
+    color: #fff;
+    text-decoration: none;
   }
 
   #desktop-header {
@@ -518,7 +547,7 @@ Desktop Version Styles
   }
 
   .desktop-menu-links {
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: baseline;
     list-style: none;
