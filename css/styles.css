@@ -66,6 +66,13 @@ Mobile Main Hamburguer Menu Styles
   color: #272a31;
 }
 
+/*
+According to Linters this should be here
+*/
+.sponsors-list li {
+  padding: 10px 20px;
+}
+
 .mobile-menu-links li:nth-child(1) {
   align-self: center;
 }
@@ -212,7 +219,7 @@ Program Section Styles
   width: 100%;
   gap: 1.1rem;
   margin-top: 1.1rem;
-  background-color: rgba(16, 16, 24, 0.36);  
+  background-color: rgba(16, 16, 24, 0.36);
   padding: 20px;
 }
 
@@ -339,15 +346,11 @@ Sponsors Section
   width: 90%;
 }
 
-.sponsors-list li {
-  padding: 10px 20px;
-}
-
 /*
 Footer
 */
 footer {
-  column-gap: 16px;  
+  column-gap: 16px;
   background-color: #e2e2e2;
   padding: 40px;
   align-items: center;
@@ -488,6 +491,7 @@ Hidden Desktop Stuff
 #about-footer-img {
   display: none;
 }
+
 /*
 Desktop Version Styles
 */
@@ -500,7 +504,6 @@ Desktop Version Styles
     display: block;
     background-color: #fff;
     width: 100%;
-
   }
 
   .first-container {
@@ -530,12 +533,12 @@ Desktop Version Styles
     display: block;
     margin: 20px 30px;
   }
-  
+
   .desktop-menu-a:link {
     text-decoration: none;
     color: #272a31;
   }
-  
+
   .desktop-menu-a:visited {
     text-decoration: none;
     color: #272a31;
@@ -593,7 +596,7 @@ Desktop Version Styles
     height: 75%;
     gap: 0.6rem;
     margin: 1.1rem 0.1rem;
-    background-color: rgba(73, 73, 85, 0.36);  
+    background-color: rgba(73, 73, 85, 0.36);
     padding: 20px;
   }
 
@@ -602,15 +605,12 @@ Desktop Version Styles
     line-height: 18px;
   }
 
-  #program-a {
-    grid-area: lk;
-  }
-
   #main-btn {
     display: none;
   }
 
   #program-a {
+    grid-area: lk;
     display: block;
     color: #fff;
     margin-top: 4rem;
@@ -681,7 +681,7 @@ Desktop Version Styles
     background-color: #2e2e2e;
     color: #fff;
   }
-  
+
   #about-footer-mobile {
     display: none;
   }
