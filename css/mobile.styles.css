@@ -117,3 +117,73 @@ Hamburguer Icon Classes
 #nav-bar-btn.active .bar:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
 }
+
+/*
+Mobile Heading Section
+*/
+.first-container {
+  background-image: url('../images/main-mobile-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 10px;
+}
+
+#heading-section {
+  flex-direction: column;
+  padding: 10px 10px 50px;
+  margin: 5px;
+}
+
+.above-heading-des {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  background: -webkit-linear-gradient(#ec5242, #9c564e, #ec5242);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 3rem;
+  order: 0;
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(#ec5242, #9c564e, #e62f1b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  order: 1;
+}
+
+.main-des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: #f6f6f7;
+  border: 4px solid #fff;
+  padding: 10px;
+  margin: 20px 0;
+  order: 2;
+}
+
+.date-heading {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
+  color: #28352f;
+  order: 3;
+}
+
+.location-des {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #28352f;
+  margin-bottom: 50px;
+  order: 4;
+}
+
