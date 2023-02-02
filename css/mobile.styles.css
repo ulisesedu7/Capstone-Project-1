@@ -125,6 +125,7 @@ Mobile Heading Section
   background-image: url('../images/main-mobile-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   padding: 10px;
 }
@@ -194,6 +195,7 @@ Program Section Styles
   text-align: center;
   background-color: rgb(39, 42, 50);
   background-image: url('../images/pattern-bg.png');
+  background-attachment: fixed;
   color: #fff;
   padding: 10%;
 }
