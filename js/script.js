@@ -1,10 +1,10 @@
 /*
-JS Object Data
+  JS Object Data
 */
 import repertoireInfo from './data.js';
 
 /*
-Hamburguer Menu constants
+  Hamburguer Menu constants
 */
 const hamburger = document.querySelector('#nav-bar-btn');
 const navMenu = document.querySelector('.mobile-menu');
@@ -12,7 +12,7 @@ const mainLogo = document.querySelector('#main-logo');
 const headerB = document.querySelector('#mobile-header');
 
 /*
-Open Hamburguer menu when the icon is clicked
+  Open Hamburguer menu when the icon is clicked
 */
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -22,7 +22,7 @@ hamburger.addEventListener('click', () => {
 });
 
 /*
-Close Menu when you click the nav links
+  Close Menu when you click the nav links
 */
 document.querySelectorAll('.mobile-menu-a').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
@@ -32,7 +32,7 @@ document.querySelectorAll('.mobile-menu-a').forEach((n) => n.addEventListener('c
 }));
 
 /*
-Create HTML dynamically
+  Create HTML dynamically
 */
 function genRepertoireMarkup(featureImg, composerTitle, pieceName, pieceDes) {
   const projectMarkup = `<div class="repertoire-work-card display-flex">

@@ -5,7 +5,7 @@
   "name": "capstone-project-1",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./js/script.js",
   "dependencies": {
     "abab": "^2.0.6",
     "acorn": "^8.8.1",
