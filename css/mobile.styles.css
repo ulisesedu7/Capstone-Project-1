@@ -191,8 +191,6 @@ Mobile Heading Section
 Program Section Styles
 */
 #program-section {
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   background-color: rgb(39, 42, 50);
   background-image: url('../images/pattern-bg.png');
@@ -262,8 +260,6 @@ Repertoire Section
 */
 #repertoire {
   background-color: #d3d3d3;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 2rem;
 }
 
@@ -320,8 +316,6 @@ Sponsors Section
 */
 #sponsors {
   text-align: center;
-  flex-direction: column;
-  align-items: center;
   background-color: #2e2e2e;
   row-gap: 20px;
   padding-top: 20px;
@@ -405,8 +399,6 @@ Logo Section
 */
 .logo-des {
   background-color: #fff;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 2rem;
   text-align: center;
   margin: 0 5rem;
@@ -443,8 +435,6 @@ Logo Section
   background-size: cover;
   height: 180px;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
   margin-bottom: 20px;
   box-shadow: inset 0 0 0 1000px #e4372480;
 }
@@ -454,8 +444,6 @@ Logo Section
   background-size: cover;
   height: 180px;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
   margin-bottom: 20px;
   box-shadow: inset 0 0 0 1000px #e4372480;
 }

@@ -120,9 +120,6 @@ Desktop Version Styles
   }
 
   .program-article {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: fit-content;
     height: 75%;
     gap: 0.6rem;
