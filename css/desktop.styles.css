@@ -1,0 +1,225 @@
+/*
+Desktop Version Styles
+*/
+@media screen and (min-width: 768px) {
+  #mobile-header {
+    display: none;
+  }
+
+  #pre-header-d {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    background-color: #2e2e2e;
+    height: 2.4rem;
+    padding: 0 6.25rem;
+  }
+
+  #pre-header-d a {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 10px;
+    align-self: center;
+  }
+
+  #pre-header-d a:link,
+  #pre-header-d a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #desktop-header {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .first-container {
+    padding: 3.125rem 6.25rem;
+  }
+
+  .desktop-nav-list {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6.25rem;
+    box-shadow: 10px 20px rgba(0, 0, 0);
+  }
+
+  .desktop-menu-links {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style: none;
+    padding: 8px;
+  }
+
+  .desktop-menu-a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: block;
+    margin: 20px 30px;
+  }
+
+  .desktop-menu-a:link {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .desktop-menu-a:visited {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .desktop-heading {
+    width: 80%;
+  }
+
+  .above-heading-des {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .main-heading {
+    font-size: 62px;
+    line-height: 62px;
+  }
+
+  .main-des {
+    font-size: 16px;
+    line-height: 35px;
+    padding: 15px;
+    width: 75%;
+    margin-bottom: 30px;
+  }
+
+  #program-section {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'title title title title title'
+      'hr hr hr hr hr'
+      'art art art art art'
+      'lk lk lk lk lk';
+  }
+
+  .program-title {
+    grid-area: title;
+    margin-bottom: 0;
+  }
+
+  .program-hr {
+    grid-area: hr;
+    margin-bottom: 1rem;
+  }
+
+  .program-article {
+    width: fit-content;
+    height: 75%;
+    gap: 0.6rem;
+    margin: 1.1rem 0.1rem;
+    background-color: rgba(73, 73, 85, 0.36);
+    padding: 20px;
+  }
+
+  .program-t-des {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  #main-btn {
+    display: none;
+  }
+
+  #program-a {
+    grid-area: lk;
+    display: block;
+    color: #fff;
+    margin-top: 4rem;
+  }
+
+  #repertoire {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'rep-t rep-t'
+      'rep-hr rep-hr'
+      'cnt cnt';
+    padding: 6.25rem;
+  }
+
+  .repertoire-title {
+    grid-area: rep-t;
+  }
+
+  #repertoire .program-hr {
+    grid-area: rep-hr;
+  }
+
+  footer {
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem 1rem;
+  }
+
+  /*
+  About Page Styles for Desktop
+  */
+  .about-head-section hr {
+    order: 2;
+  }
+
+  #about-main-des {
+    margin: 20px auto 55px;
+  }
+
+  #about-email {
+    display: inline-block;
+  }
+
+  .events-container {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  #about-main-des,
+  .logo-description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #contact-des {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .sponsors-about {
+    display: none;
+  }
+
+  #about-footer {
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+
+  #about-footer-mobile {
+    display: none;
+  }
+
+  #about-footer-img {
+    display: block;
+  }
+
+  #about-footer-p {
+    color: #fff;
+    font-weight: 400;
+  }
+}
